@@ -39,7 +39,7 @@ click + to add it to the list and click the Save button at the bottom to save th
 
 You will also need to add the folowing into your custom JSON on your stack:
 
-```sh
+
 {
     "newrelic": {
         "license": "YOUR_NEWRELIC_API_KEY,
@@ -53,6 +53,5 @@ You will also need to add the folowing into your custom JSON on your stack:
         }
     }
 }
-```sh
 
 See http://blog.newrelic.com/2014/07/31/monitoring-aws-opsworks/ for more info. 
