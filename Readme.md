@@ -6,8 +6,9 @@ These recipes will set-up Laravel 4x on Laravel OpsWorks
 0.2
 
 ### Changelog
-0.2 - Added NewRelic support
-0.1 - Initial
+
+  - 0.2 - Added NewRelic support
+  - 0.1 - Initial
 
 ### Installation
 
