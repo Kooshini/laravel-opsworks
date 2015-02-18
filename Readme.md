@@ -37,4 +37,22 @@ Setup: newrelic::default newrelic::php_agent
 ```
 click + to add it to the list and click the Save button at the bottom to save the updated. 
 
+You will also need to add the folowing into your custom JSON on your stack:
+
+```sh
+{
+    "newrelic": {
+        "license": "YOUR_NEWRELIC_API_KEY,
+        "php_agent": {
+            "php_recipe": "mod_php5_apache2::default",
+            "config_file": "/etc/php5/apache2/conf.d/newrelic.ini"
+        },
+        "application_monitoring": {
+            "app_name": "Zoek Portal Prod",
+			  "error_collector": "enable"
+        }
+    }
+}
+```sh
+
 See http://blog.newrelic.com/2014/07/31/monitoring-aws-opsworks/ for more info. 
