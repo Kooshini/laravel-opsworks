@@ -33,7 +33,7 @@ Note: Migrations happen on each deploy and during set-up so if this isn't suitab
 If you want to use New Relic then add the below to your set-up
 
 ```sh
-Setup: newrelic::default newrelic::php-agent
+Setup: newrelic::default newrelic::php_agent
 ```
 click + to add it to the list and click the Save button at the bottom to save the updated. 
 
