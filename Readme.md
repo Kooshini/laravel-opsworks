@@ -48,7 +48,7 @@ You will also need to add the folowing into your custom JSON on your stack:
             "config_file": "/etc/php5/apache2/conf.d/newrelic.ini"
         },
         "application_monitoring": {
-            "app_name": "Zoek Portal Prod",
+            "app_name": "YOUR_APP_NAME",
 			  "error_collector": "enable"
         }
     }
