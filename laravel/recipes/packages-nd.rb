@@ -8,6 +8,7 @@ node[:deploy].each do |app_name, deploy|
 	package 'php5-redis'
 	package 'php5-memcached'
 	package 'php5-mysqlnd'
+	package 'php5-gmp'
 	# Common
 	package 'imagemagick'
 	package 'php5-imagick'
