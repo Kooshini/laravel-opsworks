@@ -1,5 +1,9 @@
 ## Recipe to install the required and commonly used packages for Laravel
 node[:deploy].each do |app_name, deploy|
+    # Enable Mcrypt module because Ubuntu 14.04 needs this to be done manually
+	execute 'Update packages before install' do
+		command 'sudo apt-get update'
+	end
 	# Required
 	package 'php5'
 	package 'php5-mcrypt'
