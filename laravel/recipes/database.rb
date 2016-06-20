@@ -9,10 +9,10 @@ node[:deploy].each do |app_name, deploy|
 		## Get the environment_variables from the OpsWorks console 
 		## and copy them into the variables to be passed to the template in ../templates/default/
 		 variables({
-			:DB_HOST => deploy[:environment_variables][:RDS_HOST],
-			:DB_NAME => deploy[:environment_variables][:RDS_DATABASE],
-			:DB_USER => deploy[:environment_variables][:RDS_USERNAME],
-			:DB_PASS => deploy[:environment_variables][:RDS_PASS],
+			:DB_HOST => deploy[:environment_variables][:DB_HOST],
+			:DB_NAME => deploy[:environment_variables][:DB_DATABASE],
+			:DB_USER => deploy[:environment_variables][:DB_USERNAME],
+			:DB_PASS => deploy[:environment_variables][:DB_PASSWORD],
 			:REDIS_HOST => deploy[:environment_variables][:REDIS_HOST]
 		})
 	end
